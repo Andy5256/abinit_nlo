@@ -1,0 +1,18 @@
+{
+    "materials": [
+    { "icsd_ids": 605191, "mp_id": 5342, "mid": 74911, "hse_gap": 2.16 },
+    { "icsd_ids": 190566, "mp_id": 5518, "mid": 76595,"hse_gap": 1.01 },
+    { "icsd_ids": 637510, "mp_id": 4524, "mid": 73309,"hse_gap": 2.15 },
+    { "icsd_ids": 20970, "mp_id": 6268, "mid": 86291,"hse_gap": 5.00 },
+    { "icsd_ids": 415526, "mp_id": 3731, "mid": 72520,"hse_gap": 4.99 },
+    { "icsd_ids": 48025, "mp_id": 23349, "mid": 66282,"hse_gap": 5.18 },
+    { "icsd_ids": 621141, "mp_id": 558491, "mid": 79037,"hse_gap": 6.95 },
+    { "icsd_ids": 69319, "mp_id": 5730, "mid": 83912,"hse_gap": 6.46 },
+    { "icsd_ids": 75995, "mp_id": 5990, "mid": 84706,"hse_gap": 6.35 },
+    { "icsd_ids": 2081, "mp_id": 3977, "mid": 72862,"hse_gap": 7.11 },
+    { "icsd_ids": 77277, "mp_id": 6870, "mid": 90926,"hse_gap": 7.79 },
+    { "icsd_ids": 415201, "mp_id": 3660, "mid": 72417,"hse_gap": 8.28 },
+    { "icsd_ids": 419675, "mp_id": 4779, "mid": 73477,"hse_gap": 7.82 },
+    { "icsd_ids": 185674, "mp_id": 5540, "mid": 76734,"hse_gap": 9.18 }
+    ]
+}
