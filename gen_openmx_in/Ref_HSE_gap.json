@@ -1,4 +1,5 @@
 {
+    "note":"# materials_index kden1 4 8 12",
     "materials": [
     { "icsd_ids": 605191, "mp_id": 5342, "mid": 74911, "hse_gap": 2.16 },
     { "icsd_ids": 190566, "mp_id": 5518, "mid": 76595,"hse_gap": 1.01 },
