@@ -175,6 +175,7 @@ def get_openmx_value(key):
             pao = pao_set[element][0]
             vps = pao_set[element][1]
             epv_list.append(" %-4s %-20s %s" % (element, pao, vps))
+            # use "\n" to join the strs in epv_list
             str_epv = "\n".join(epv_list)
         return str_epv
     elif (key == "Atoms.Number"):
