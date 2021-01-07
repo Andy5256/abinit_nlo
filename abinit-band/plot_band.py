@@ -21,7 +21,7 @@ E_k = np.array(E_k).T - 0.41633 * 27.2113845 *0
 
 for Ei in E_k:
     # plt.plot(Ei + 0.14101 * 27.211 * 0.7, c='r') # graphene
-    plt.plot(Ei - 0.14287 * 27.211, c='r') # AgGaS2
+    plt.plot(Ei - 0.14287 * 27.211, c='b') # AgGaS2
 plt.ylim(-6,6)
 plt.xlim(0,nkpts-1)
 plt.hlines(0,xmin = 0, xmax = nkpts - 1, colors = 'k', linestyles='--')
@@ -35,7 +35,6 @@ for idx, line in enumerate(info):
         if not 'type' in line:
             highsymk = int(line.split()[3])
             for i in range(highsymk):
-                print(idx)
                 xtick_list.append(int(info[idx+1+i].split()[5]))
 xtick_list.append(nkpts)
 # kpath = [chr(915), 'K', 'M', chr(915)] # kpath for graphene
