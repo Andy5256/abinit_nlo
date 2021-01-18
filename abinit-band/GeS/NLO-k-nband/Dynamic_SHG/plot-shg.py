@@ -1,0 +1,32 @@
+#%%
+import matplotlib.pyplot as plt
+import numpy as np
+
+plt.figure(figsize=(10,4), dpi=100)
+plt.figure(1)
+ax1 = plt.subplot(121)
+openmx = np.loadtxt('ImSHG_111.dat')
+ax1.plot(openmx[:,0], openmx[:,1], label='openmx')
+# abinit = np.loadtxt('ImSHG_111.dat')
+abinit = np.loadtxt('optic_2_0001_0001_0001-ChiTotIm_9110.out')
+ax1.plot(abinit[:,0], abinit[:,2], label='abinit')
+plt.xlabel('$\omega$ (eV)')
+plt.ylabel('Im SHG 111')
+ax1.legend()
+plt.xlim(0,6)
+plt.title('1L-GeS Im_SHG_111')
+ax2 = plt.subplot(122)
+openmx = np.loadtxt('ReSHG_111.dat')
+ax2.plot(openmx[:,0], openmx[:,1], label='openmx')
+# abinit = np.loadtxt('ReSHG_111.dat')
+abinit = np.loadtxt('optic_2_0001_0001_0001-ChiTotRe_9110.out')
+ax2.plot(abinit[:,0], abinit[:,2], label='abinit')
+plt.xlabel('$\omega$ (eV)')
+plt.ylabel('$\chi$$^{(2)}$$_{111}$')
+ax2.legend()
+plt.xlim(0,6)
+plt.title('1L-GeS Re_SHG_111')
+ax2.legend()
+plt.tight_layout()
+plt.savefig('SHG_111.png')
+# %%
