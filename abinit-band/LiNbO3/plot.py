@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 info = np.loadtxt('333.dat')
-plt.plot(info[:,1]/30, info[:,2], '-o', label = 'k5*5*5')
+plt.plot(info[:,1]/30, 2*info[:,2], '-o', label = 'k5*5*5')
 plt.xlabel('# of orbitals/# of occ')
 plt.ylabel('|χ_{ij}^{(2)|}$(pm/V)')
 plt.title('LiNbO$_3$ Static SHG 333')

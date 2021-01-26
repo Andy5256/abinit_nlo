@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # a='_tol0.0002'
-a='_2080'
+a='_2080_qmx_e0.1'
 plt.figure(figsize=(10,4), dpi=100)
 plt.figure(1)
 ax1 = plt.subplot(121)
@@ -14,7 +14,7 @@ abinit = np.loadtxt('optic_2_0001_0002_0003-ChiTotIm'+a+'.out')
 ax1.plot(abinit[:,0], abinit[:,2], label='abinit')
 plt.xlabel('$\omega$ (eV)')
 plt.ylabel('Im SHG 123')
-# plt.ylim(-300,300)
+plt.ylim(-900,900)
 ax1.legend()
 plt.xlim(0,6)
 plt.title('GaAs Im_SHG_123')
@@ -28,7 +28,7 @@ plt.xlabel('$\omega$ (eV)')
 plt.ylabel('$\chi$$^{(2)}$$_{123}$')
 ax2.legend()
 plt.xlim(0,6)
-# plt.ylim(-300,300)
+plt.ylim(-900,900)
 plt.title('GaAs Re_SHG_123')
 ax2.legend()
 plt.tight_layout()
