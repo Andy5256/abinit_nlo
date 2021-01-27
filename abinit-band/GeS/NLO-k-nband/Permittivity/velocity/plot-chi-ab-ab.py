@@ -1,0 +1,32 @@
+#%%
+import matplotlib.pyplot as plt
+import numpy as np
+
+a=str(12100)
+b=str(1290)
+plt.figure(figsize=(10,4), dpi=100)
+plt.figure(1)
+ax1 = plt.subplot(121)
+info1 = np.loadtxt('optic_2_0001_0001-linopt_'+a+'.out')
+ax1.plot(info1[:118,0], info1[:118,1], label='abinit'+a)
+abinit = np.loadtxt('optic_2_0001_0001-linopt_'+b+'.out')
+ax1.plot(abinit[:118,0], abinit[:118,1], label='abinit'+b)
+plt.xlabel('$\omega$ (eV)')
+plt.ylabel('Im $\epsilon$${_r}$$^{xx}$')
+ax1.legend()
+plt.xlim(0,6)
+plt.title('1L-GeS Im_chi_11')
+ax2 = plt.subplot(122)
+info2 = np.loadtxt('optic_2_0001_0001-linopt_'+a+'.out')
+ax2.plot(info2[119:237,0], info2[119:237,1], label='abinit'+a)
+abinit = np.loadtxt('optic_2_0001_0001-linopt_'+b+'.out')
+ax2.plot(abinit[119:237,0], abinit[119:237,1], label='abinit'+b)
+plt.xlabel('$\omega$ (eV)')
+plt.ylabel('Re $\epsilon$${_r}$$^{xx}$')
+ax2.legend()
+plt.xlim(0,6)
+plt.title('1L-GeS Re_chi_11')
+ax2.legend()
+plt.tight_layout()
+plt.savefig('Chi_11_'+a+'_'+b+'.png')
+# %%
